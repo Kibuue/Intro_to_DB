@@ -1,5 +1,5 @@
--- Select the database
+-- Use the target database
 USE alx_book_store;
 
--- Show the full description of the 'Books' table without using DESCRIBE or EXPLAIN
-SHOW CREATE TABLE Books;
+-- Retrieve detailed information about the 'books' table
+SHOW TABLE STATUS WHERE Name = 'books';
