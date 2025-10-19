@@ -1,5 +1,8 @@
--- Use the target database
+-- Select the database
 USE alx_book_store;
 
--- Retrieve detailed information about the 'books' table
-SHOW TABLE STATUS WHERE Name = 'books';
+-- Retrieve the full description of the 'Books' table using INFORMATION_SCHEMA
+SELECT COLUMN_NAME, COLUMN_TYPE
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = 'alx_book_store'
+AND TABLE_NAME = 'Books';
